@@ -1,0 +1,18 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - port: 8080 # api server
+    visibility: public
+    onOpen: ignore
+
+vscode:
+  extensions:
+    - johnpapa.winteriscoming
+    - vscode-icons-team.vscode-icons
+    - esbenp.prettier-vscode
+    - naumovs.color-highlight
+    - 42crunch.vscode-openapi
+    - dsznajder.es7-react-js-snippets
+    - wakatime.vscode-wakatime
+    - asciidoctor.asciidoctor-vscode
