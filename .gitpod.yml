@@ -16,3 +16,7 @@ vscode:
     - dsznajder.es7-react-js-snippets
     - wakatime.vscode-wakatime
     - asciidoctor.asciidoctor-vscode
+
+tasks:
+  - init: yarn install
+    command: yarn
