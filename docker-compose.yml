@@ -12,6 +12,7 @@ services:
   
   dbadmin:
     image: dpage/pgadmin4
+    build: ./docker/pgadmin
     environment:
       PGADMIN_DEFAULT_EMAIL: nest@nestjs.com
       PGADMIN_DEFAULT_PASSWORD: nest
