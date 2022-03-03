@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13-ptbr
+    build: ./docker/postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: nest
+  
+  dbadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: nest@nestjs.com
+      PGADMIN_DEFAULT_PASSWORD: nest
+      PGADMIN_LISTEN_PORT: 8080
+    ports:
+      - "8081:8080"

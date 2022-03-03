@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "develop",
+      "Group": "NestJs",
+      "Port": 5432,
+      "Username": "postgres",
+      "Password": "nest",
+      "Host": "db",
+      "SSLMode": "prefer",
+      "MaintenanceDB": "postgres"
+    }
+  }
+}

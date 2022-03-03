@@ -1,0 +1,2 @@
+CREATE DATABASE nest WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'pt_BR.utf8' LC_CTYPE = 'pt_BR.utf8';
+ALTER DATABASE nest OWNER TO postgres
