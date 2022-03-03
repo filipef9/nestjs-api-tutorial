@@ -2,5 +2,11 @@ FROM dpage/pgadmin4
 
 COPY servers.json /pgadmin4/
 
-RUN apk add --no-cache tzdata
-RUN cp /usr/share/zoneinfo/Amercia/Sao_Paulo /etc/localtime
+USER root
+
+RUN apk add --no-cache tzdata &&\
+  cp /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime &&\
+  echo 'America/Sao_Paulo' > /etc/timezone &&\
+  apk del tzdata
+
+USER pgadmin
