@@ -5,6 +5,11 @@ ports:
   - port: 8080 # api server
     visibility: public
     onOpen: ignore
+  - port: 8180 # pgadmin 4
+    visibility: public
+    onOpen: open-browser
+  - port: 5432 # postgres
+    onOpen: ignore
 
 vscode:
   extensions:
