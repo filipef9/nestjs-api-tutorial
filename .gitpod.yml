@@ -16,6 +16,7 @@ vscode:
     - dsznajder.es7-react-js-snippets
     - wakatime.vscode-wakatime
     - asciidoctor.asciidoctor-vscode
+    - humao.rest-client
 
 tasks:
   - init: yarn install
