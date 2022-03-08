@@ -39,4 +39,4 @@ tasks:
 - name: Yarn Install
   init: yarn
 - name: Run Prisma Migrate
-  init: npx prisma migrate
+  init: npx prisma migrate dev
