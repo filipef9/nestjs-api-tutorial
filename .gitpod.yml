@@ -10,6 +10,9 @@ ports:
     onOpen: open-browser
   - port: 5432 # postgres
     onOpen: ignore
+  - port: 5555 # prisma studio
+    visibility: public
+    onOpen: open-browser
 
 vscode:
   extensions:
@@ -22,6 +25,7 @@ vscode:
     - wakatime.vscode-wakatime
     - asciidoctor.asciidoctor-vscode
     - humao.rest-client
+    - Prisma.prisma
 
 tasks:
 - before: |
