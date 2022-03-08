@@ -37,10 +37,8 @@ tasks:
   init: docker-compose up --no-start
   command: docker-compose up
 - name: Yarn Install
-  init: |
-    sleep 15
-    yarn
+  init: yarn
 - name: Run Prisma Migrate
   init: |
-    /usr/bin/gp sync-await bundle
+    /usr/bin/gp await-port 5432
     npx prisma migrate dev
