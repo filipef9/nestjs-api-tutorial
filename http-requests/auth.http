@@ -1,9 +1,9 @@
-POST https://8080-filipef9-nestjsapitutori-y8f3b65c94k.ws-us34.gitpod.io/auth/signup
+POST ${{$processEnv API_SERVER_HOST}}/auth/signup
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 27
 
 email=nest@nestjs.com&password=nest
 ###
-POST https://8080-filipef9-nestjsapitutori-au6mxe54m1f.ws-us34.gitpod.io/auth/signin
+POST ${{$processEnv API_SERVER_HOST}}/auth/signin
 ###
 

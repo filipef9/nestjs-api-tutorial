@@ -28,6 +28,8 @@ vscode:
     - Prisma.prisma
 
 tasks:
+- name: Configure API Server ENV URL
+  init: /usr/bin/gp env API_SERVER_HOST=$(/usr/bin/gp url 8080)
 - name: Start Postgres and PgAdmin
   before: |
     sudo docker-up &
