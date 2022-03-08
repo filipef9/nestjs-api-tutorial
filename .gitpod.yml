@@ -37,6 +37,10 @@ tasks:
   init: docker-compose up --no-start
   command: docker-compose up
 - name: Yarn Install
-  init: yarn
+  init: |
+    /usr/bin/gp sync-await bundle
+    yarn
 - name: Run Prisma Migrate
-  init: npx prisma migrate dev
+  init: |
+    /usr/bin/gp sync-await bundle
+    npx prisma migrate dev
