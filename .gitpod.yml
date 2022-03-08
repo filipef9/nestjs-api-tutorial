@@ -45,4 +45,6 @@ tasks:
     /usr/bin/gp await-port 5432
     npx prisma migrate dev
 - name: Start API Server (Dev)
-  command: yarn start:dev
+  command: |
+    /usr/bin/gp await-port 5432
+    yarn start:dev

@@ -15,5 +15,6 @@
   },
   "editor.parameterHints.enabled": true,
   "prettier.singleQuote": true,
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "rest-client.previewOption": "exchange"
 }
