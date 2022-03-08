@@ -28,12 +28,15 @@ vscode:
     - Prisma.prisma
 
 tasks:
-- before: |
+- name: Start Postgres and PgAdmin
+  before: |
     sudo docker-up &
     mkdir -p /workspace/pgadmin-data
     sudo chown -R 5050:5050 /workspace/pgadmin-data
     sleep 5
   init: docker-compose up --no-start
   command: docker-compose up
-- init: yarn install
-  command: yarn
+- name: Yarn Install
+  init: yarn
+- name: Run Prisma Migrate
+  init: npx prisma migrate
