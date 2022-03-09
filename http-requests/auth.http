@@ -4,6 +4,8 @@ Content-Type: application/x-www-form-urlencoded
 email=nest@nestjs.com&password=nest
 ###
 
-GET {{$processEnv API_SERVER_HOST}}/auth/signin
+POST {{$processEnv API_SERVER_HOST}}/auth/signin
+Content-Type: application/x-www-form-urlencoded
 
+email=nest@nestjs.com&password=nest
 ###

@@ -43,7 +43,7 @@ tasks:
 - name: Run Prisma Migrate
   init: |
     /usr/bin/gp await-port 5432
-    npx prisma migrate dev
+    npx prisma migrate deploy
 - name: Start API Server (Dev)
   command: |
     /usr/bin/gp await-port 5432
