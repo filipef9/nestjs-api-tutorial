@@ -48,3 +48,5 @@ tasks:
   command: |
     /usr/bin/gp await-port 5432
     yarn start:dev
+- name: Start Prisma Studio
+  command: npx prisma studio 
