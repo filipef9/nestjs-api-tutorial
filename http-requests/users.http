@@ -1,0 +1,13 @@
+@baseURL = {{$processEnv API_SERVER_HOST}}
+
+# @name signin
+POST {{baseURL}}/auth/signin
+Content-Type: application/x-www-form-urlencoded
+
+email=nest@nestjs.com&password=nest
+###
+
+@accessToken = {{signin.response.body.access_token}}
+GET {{baseURL}}/users/me
+Authorization: Bearer {{accessToken}}
+###
